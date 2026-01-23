@@ -1,1 +1,11 @@
-
+// Script untuk tombol "Baca Lebih Lanjut"
+document.getElementById('toggleBtn').addEventListener('click', function() {
+    const moreText = document.getElementById('moreText');
+    if (moreText.style.display === 'none') {
+        moreText.style.display = 'block';
+        this.textContent = 'Sembunyikan';
+    } else {
+        moreText.style.display = 'none';
+        this.textContent = 'Baca Lebih Lanjut';
+    }
+});
